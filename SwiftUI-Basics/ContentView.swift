@@ -22,14 +22,87 @@ struct ContentView: View {
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width:180, height:180)
+                        .frame(width:150, height:150)
                     Text("76°")
                         .font(.system(size: 60, weight:.medium ))
                         .foregroundColor(.white)
                 }
                 Spacer()
-                   
-            }
+                HStack{
+                    VStack{
+                    Text("Tue")
+                            .font(.system(size: 20, weight: .medium, design: .default))
+                            .foregroundColor(.white)
+                    Image(systemName: "cloud.sun.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width:35, height:35)
+                    Text("74°")
+                            .font(.system(size: 20, weight: .medium, design: .default))
+                            .foregroundColor(.white)
+                    }
+                    VStack{
+                        Text("Tue")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:35, height:35)
+                        Text("74°")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                    }
+                    VStack{
+                        Text("Tue")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:35, height:35)
+                        Text("74°")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                    }
+                    VStack{
+                        Text("Tue")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:35, height:35)
+                        Text("74°")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                    }
+                    VStack{
+                        Text("Tue")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:35, height:35)
+                        Text("74°")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                    }
+                }
+                Spacer()
+                Spacer()
+                HStack{
+                  
+                }
+                Spacer()
+                
+                }
         }
     }
 }
