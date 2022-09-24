@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .cyan, .teal, .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors: [.blue, .cyan, .teal, Color("lightBlue")]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 Text("Tokyo, Japan")
@@ -27,40 +27,50 @@ struct ContentView: View {
                         .font(.system(size: 60, weight:.medium ))
                         .foregroundColor(.white)
                 }
-                Spacer()
-                HStack{
+                .padding(.bottom, 5)
+                HStack(spacing: 18){
                     WeatherDayView(dayOfWeek: "Tue",
                                    imageName: "cloud.sun.fill",
                                    temperature: 70)
                     WeatherDayView(dayOfWeek: "Wed",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 70)
+                                   imageName: "cloud.fill",
+                                   temperature: 69)
                     WeatherDayView(dayOfWeek: "Thurs",
-                                   imageName: "cloud.sun.fill",
+                                   imageName: "cloud.rain.fill",
                                    temperature: 70)
-                    WeatherDayView(dayOfWeek: "Frid",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 70)
+                    WeatherDayView(dayOfWeek: "Fri",
+                                   imageName: "sun.max.fill",
+                                   temperature: 76)
                     WeatherDayView(dayOfWeek: "Sat",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 70)
+                                   imageName: "sun.max.fill",
+                                   temperature: 80)
                  
                 }
                 Spacer()
                 Spacer()
-                HStack{
-                  
+                Button {
+                    print("tapped")
+                } label:{
+                    Text("Change Day Time")
+                        .frame(width:280, height:50)
+                        .background(Color.white)
+                        .font(.system(size:20, weight: .bold, design:.default))
+                        .cornerRadius(10)
                 }
-                Spacer()
                 
-                }
+                Spacer()
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .previewInterfaceOrientation(.landscapeLeft)
+        }
     }
 }
 
@@ -79,7 +89,7 @@ struct WeatherDayView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width:35, height:35)
-            Text("\(temperature)")
+            Text("\(temperature)°")
                 .font(.system(size: 20, weight: .medium, design: .default))
                 .foregroundColor(.white)
         }
