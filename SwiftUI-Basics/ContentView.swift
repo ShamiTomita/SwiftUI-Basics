@@ -43,7 +43,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                     }
                     VStack{
-                        Text("Tue")
+                        Text("Wed")
                                 .font(.system(size: 20, weight: .medium, design: .default))
                                 .foregroundColor(.white)
                         Image(systemName: "cloud.sun.fill")
@@ -56,7 +56,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                     }
                     VStack{
-                        Text("Tue")
+                        Text("Thurs")
                                 .font(.system(size: 20, weight: .medium, design: .default))
                                 .foregroundColor(.white)
                         Image(systemName: "cloud.sun.fill")
@@ -69,7 +69,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                     }
                     VStack{
-                        Text("Tue")
+                        Text("Fri")
                                 .font(.system(size: 20, weight: .medium, design: .default))
                                 .foregroundColor(.white)
                         Image(systemName: "cloud.sun.fill")
@@ -82,7 +82,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                     }
                     VStack{
-                        Text("Tue")
+                        Text("Sat")
                                 .font(.system(size: 20, weight: .medium, design: .default))
                                 .foregroundColor(.white)
                         Image(systemName: "cloud.sun.fill")
